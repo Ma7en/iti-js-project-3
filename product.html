@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Casmart - Biggest shopping center</title>
+
+        <!-- 
+            - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./favicon.svg" type="image/x-icon" />
+
+        <!-- 
+            - custom css link
+        -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- 
+            - google font link
+        -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        /> -->
+    </head>
+
+    <body>
+        <!-- 
+            - #go-to-top
+        -->
+        <a class="go-to-top" id="go-to-top">
+            <ion-icon name="chevron-up"></ion-icon>
+        </a>
+
+        <!-- 
+            - #HEADER
+        -->
+        <header class="header" data-header>
+            <div class="container">
+                <div class="overlay" data-overlay></div>
+
+                <a href="./index.html" class="logo">
+                    <img
+                        src="./images/logo.svg"
+                        alt="Casmart logo"
+                        width="130"
+                        height="31"
+                    />
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="./index.html" class="logo">
+                            <img
+                                src="./images/logo.svg"
+                                alt="Casmart logo"
+                                width="130"
+                                height="31"
+                            />
+                        </a>
+
+                        <button
+                            class="nav-close-btn"
+                            data-nav-close-btn
+                            aria-label="Close Menu"
+                        >
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="./index.html#home" class="navbar-link"
+                                >Home</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#service" class="navbar-link"
+                                >About</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#product" class="navbar-link"
+                                >Shop</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#blog" class="navbar-link"
+                                >Blog</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#footer" class="navbar-link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="./login.html" class="header-action-btn sign">
+                        <ion-icon
+                            name="person-outline"
+                            aria-hidden="true"
+                        ></ion-icon>
+
+                        <p class="header-action-label">Sign in</p>
+                    </a>
+
+                    <button class="header-action-btn">
+                        <ion-icon
+                            name="cart-outline"
+                            aria-hidden="true"
+                        ></ion-icon>
+
+                        <p class="header-action-label">Cart</p>
+
+                        <div class="btn-badge green" aria-hidden="true">1</div>
+                    </button>
+                </div>
+
+                <button
+                    class="nav-open-btn"
+                    data-nav-open-btn
+                    aria-label="Open Menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="product-details">
+                <div class="container">
+                    <div class="title">
+                        <h1>product details</h1>
+                    </div>
+
+                    <div class="content">
+                        <!-- <p></p> -->
+                        <!-- <input type="text" placeholder="Enter your comment" required> -->
+                        <!-- <table>
+                            <tbody>
+                                <tr>
+                                    <td>d</td>
+                                    <td>x</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 
+            - #model cart
+        -->
+        <div class="model-cart">
+            <div class="container">
+                <div class="title">
+                    <h2>list-product</h2>
+                    <button
+                        class="model-close-btn"
+                        data-nav-close-btn=""
+                        aria-label="Close Menu"
+                    >
+                        <ion-icon
+                            name="close-outline"
+                            role="img"
+                            class="md hydrated"
+                            aria-label="close outline"
+                        ></ion-icon>
+                    </button>
+                </div>
+
+                <div class="list-product" id="list-product">
+                    <!-- <p></p> -->
+                </div>
+
+                <div id="total"></div>
+            </div>
+        </div>
+
+        <!-- 
+            - #FOOTER
+        -->
+        <footer class="footer" id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <img src="./images/logo.svg" alt="Casmart logo" />
+                        </a>
+
+                        <p class="footer-text">
+                            Casmart is a fashion theme for presents a complete
+                            wardrobe of uniquely crafted Ethnic Wear, Casuals,
+                            Edgy Denims, & Accessories inspired from the most
+                            contemporary
+                        </p>
+
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Information</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About Company</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Payment Type</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Awards Winning</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >World Media Partner</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Become an Agent</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Refund Policy</a>
+                        </li>
+                    </ul>
+
+                    <!-- <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Category</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >Handbags & Wallets</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Women's Clothing</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Plus Sizes</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >Complete Your Look</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Baby Corner</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Man & Woman Shoe</a>
+                        </li>
+                    </ul> -->
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Help & Support</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Dealers & Agents</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQ Information</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Return Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"
+                                >Shipping & Delivery</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Order Tranking</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">List of Shops</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="copyright">
+                        &copy; <span class="data-year">2022</span>
+                        <a href="#">Mazen Saad</a>. All Rights Reserved
+                    </p>
+
+                    <ul class="footer-bottom-list">
+                        <li>
+                            <a href="#" class="footer-bottom-link"
+                                >Privacy Policy</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-bottom-link"
+                                >Terms & Conditions</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-bottom-link">Sitemap</a>
+                        </li>
+                    </ul>
+
+                    <div class="payment">
+                        <p class="payment-title">We Support</p>
+
+                        <img
+                            src="./images/payment-img.png"
+                            alt="Online payment logos"
+                            class="payment-img"
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 
+            - custom js link
+        -->
+        <script src="./js/scroll.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/footer.js"></script>
+        <script src="./js/cart.js"></script>
+        <script src="./js/product.js"></script>
+
+        <!-- 
+            - ionicon link
+        -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>

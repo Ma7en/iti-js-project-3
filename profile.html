@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Casmart - Biggest shopping center</title>
+
+        <!-- 
+            - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./favicon.svg" type="image/x-icon" />
+
+        <!-- 
+            - custom css link
+        -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- 
+            - google font link
+        -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        /> -->
+    </head>
+
+    <body>
+        <!-- 
+            - #go-to-top
+        -->
+        <a class="go-to-top" id="go-to-top">
+            <ion-icon name="chevron-up"></ion-icon>
+        </a>
+
+        <!-- 
+            - #HEADER
+        -->
+        <header class="header" data-header>
+            <div class="container">
+                <div class="overlay" data-overlay></div>
+
+                <a href="./index.html" class="logo">
+                    <img
+                        src="./images/logo.svg"
+                        alt="Casmart logo"
+                        width="130"
+                        height="31"
+                    />
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="./index.html" class="logo">
+                            <img
+                                src="./images/logo.svg"
+                                alt="Casmart logo"
+                                width="130"
+                                height="31"
+                            />
+                        </a>
+
+                        <button
+                            class="nav-close-btn"
+                            data-nav-close-btn
+                            aria-label="Close Menu"
+                        >
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="./index.html#home" class="navbar-link"
+                                >Home</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#service" class="navbar-link"
+                                >About</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#product" class="navbar-link"
+                                >Shop</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#blog" class="navbar-link"
+                                >Blog</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="./index.html#footer" class="navbar-link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="./login.html" class="header-action-btn sign">
+                        <ion-icon
+                            name="person-outline"
+                            aria-hidden="true"
+                        ></ion-icon>
+
+                        <p class="header-action-label">Sign in</p>
+                    </a>
+
+                    <button class="header-action-btn">
+                        <ion-icon
+                            name="cart-outline"
+                            aria-hidden="true"
+                        ></ion-icon>
+
+                        <p class="header-action-label">Cart</p>
+
+                        <div class="btn-badge green" aria-hidden="true">0</div>
+                    </button>
+                </div>
+
+                <button
+                    class="nav-open-btn"
+                    data-nav-open-btn
+                    aria-label="Open Menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="profile">
+                <div class="container">
+                    <div id="profile-content"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 
+            - custom js link
+        -->
+        <script src="./js/scroll.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/profile.js"></script>
+
+        <!-- 
+            - ionicon link
+        -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
